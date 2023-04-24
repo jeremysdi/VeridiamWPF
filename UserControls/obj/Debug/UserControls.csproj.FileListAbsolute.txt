@@ -11,3 +11,16 @@ C:\Users\jerem\source\repos\Veridiam\UserControls\obj\Debug\UserControls.csproj.
 C:\Users\jerem\source\repos\Veridiam\UserControls\obj\Debug\UserControls.csproj.CoreCompileInputs.cache
 C:\Users\jerem\source\repos\Veridiam\UserControls\obj\Debug\UserControls.dll
 C:\Users\jerem\source\repos\Veridiam\UserControls\obj\Debug\UserControls.pdb
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\bin\Debug\UserControls.dll
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\bin\Debug\UserControls.pdb
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.csproj.AssemblyReference.cache
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControl1.g.cs
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls_MarkupCompile.cache
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls_MarkupCompile.lref
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControl1.baml
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.g.resources
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.Properties.Resources.resources
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.csproj.GenerateResource.cache
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.csproj.CoreCompileInputs.cache
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.dll
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\UserControls\obj\Debug\UserControls.pdb
