@@ -27,7 +27,7 @@ namespace UserControls
 
         private void BtnConnect_Click(object sender, RoutedEventArgs e)
         {
-
+            //this is a test
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
