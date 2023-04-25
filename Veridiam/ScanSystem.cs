@@ -31,6 +31,56 @@ namespace Veridiam
         {
             return GalilHandler.Reset();
         }
+
+        internal static void JogBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void Jog()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void FullStepBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void FullStep()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void TenStep()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void TenStepBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void HundoStep()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void HundoStepBack()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void ThouStep()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void ThouStepBack()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

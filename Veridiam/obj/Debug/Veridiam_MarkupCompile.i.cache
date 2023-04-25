@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\App.xaml
-4-420284582
+41069165927
 
-161126674894
+16-1672338675
 14898112664
-MainWindow.xaml;ServoControl.xaml;UserControl1.xaml;UserControl2.xaml;
+JogControl.xaml;MainWindow.xaml;ServoControl.xaml;ConnectControl.xaml;
 
-True
+False
 

@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="gclib.cs" />
+    <Compile Include="JogControl.xaml.cs">
+      <DependentUpon>JogControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RemoteSocomateHandler.cs" />
     <Compile Include="ScanSystem.cs" />
     <Compile Include="ServoControl.xaml.cs">
@@ -63,12 +66,13 @@
     </Compile>
     <Compile Include="SIDev.cs" />
     <Compile Include="SocomateHandler.cs" />
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="ConnectControl.xaml.cs">
+      <DependentUpon>ConnectControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl2.xaml.cs">
-      <DependentUpon>UserControl2.xaml</DependentUpon>
-    </Compile>
+    <Page Include="JogControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,13 +91,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl1.xaml">
+    <Page Include="ConnectControl.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="UserControl2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
