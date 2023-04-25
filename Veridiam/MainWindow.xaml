@@ -9,6 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <local:UserControl1 HorizontalAlignment="Left" Margin="278,162,0,0" VerticalAlignment="Top"/>
+        <local:ServoControl HorizontalAlignment="Left" Margin="68,111,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

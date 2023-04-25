@@ -58,6 +58,9 @@
     <Compile Include="gclib.cs" />
     <Compile Include="RemoteSocomateHandler.cs" />
     <Compile Include="ScanSystem.cs" />
+    <Compile Include="ServoControl.xaml.cs">
+      <DependentUpon>ServoControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SIDev.cs" />
     <Compile Include="SocomateHandler.cs" />
     <Compile Include="UserControl1.xaml.cs">
@@ -77,9 +80,13 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControl1.xaml">
+    <Page Include="ServoControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
