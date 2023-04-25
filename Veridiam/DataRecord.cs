@@ -4,41 +4,45 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Veridiam
 {
     internal class DataRecord
     {
-        public DataRecord() 
+        MechConfig MechConfig { get; }
+        public DataRecord(int numberOfAxis, int numberOfTransducers)
         {
-           
-            
+            MechConfig = new MechConfig(numberOfAxis);
+            // Limit status
+            // Current Position
+
         }
     }
 
     internal class MechConfig
     {
-        public int numberOfAxis { get; }
-        public string[] axisDesignation { get; set; }
-        public int[] acceleration { get; set; }
-        public int[] deceleration { get; set; }
-        public double[] scalingDivider { get; set; }
-        public int[] p { get; set; }
-        public int[] i { get; set; }
-        public int[] d { get; set; }
-        public bool[] axisUseLimits { get; set; }
+        public int NumberOfAxis { get; }
+        public string[] AxisDesignation { get; set; }
+        public int[] Acceleration { get; set; }
+        public int[] Deceleration { get; set; }
+        public double[] ScalingDivider { get; set; }
+        public int[] P { get; set; }
+        public int[] I { get; set; }
+        public int[] D { get; set; }
+        public bool[] AxisUseLimits { get; set; }
 
-        public MechConfig(int numberOfAxis) 
+        public MechConfig(int numberOfAxis)
         {
-            this.numberOfAxis = numberOfAxis;
-            axisDesignation = new string[numberOfAxis];
-            acceleration = new int[numberOfAxis];
-            deceleration = new int[numberOfAxis];
-            scalingDivider = new double[numberOfAxis];
-            p = new int[numberOfAxis];
-            i = new int[numberOfAxis];
-            d = new int[numberOfAxis];
-            axisUseLimits = new bool[numberOfAxis];
+            this.NumberOfAxis = numberOfAxis;
+            AxisDesignation = new string[numberOfAxis];
+            Acceleration = new int[numberOfAxis];
+            Deceleration = new int[numberOfAxis];
+            ScalingDivider = new double[numberOfAxis];
+            P = new int[numberOfAxis];
+            I = new int[numberOfAxis];
+            D = new int[numberOfAxis];
+            AxisUseLimits = new bool[numberOfAxis];
             LoadDefaults();
         }
 
@@ -47,14 +51,67 @@ namespace Veridiam
             try
             {
                 FileStream fileStream = new FileStream("default.cfg", FileMode.Open);
-                while (fileStream.Position < fileStream.Length)
+                StreamReader sr = new StreamReader(fileStream);
+
+                // Hardcoded
+
+                // Axis Designation
+                string[] line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
                 {
-                    // load whatever
+                    AxisDesignation[i] = line[i];
+                }
+
+                // Acceleration
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    Acceleration[i] = int.Parse(line[i]);
+                }
+
+                // Deceleration
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    Deceleration[i] = int.Parse(line[i]);
+                }
+
+                // Scaling Divider
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    ScalingDivider[i] = int.Parse(line[i]);
+                }
+
+                // P
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    P[i] = int.Parse(line[i]);
+                }
+
+                // I
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    I[i] = int.Parse(line[i]);
+                }
+
+                // D
+                line = sr.ReadLine().Split(',');
+                for (int i = 0; i < line.Length; i++)
+                {
+                    D[i] = int.Parse(line[i]);
                 }
             }
-            catch (FileNotFoundException) 
-            { 
+            catch (FileNotFoundException)
+            {
                 // default file not found, load hard-coded defaults
+                MessageBox.Show("Could not find default.cfg file");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("default.cfg did not load properly");
             }
         }
     }
@@ -68,12 +125,33 @@ namespace Veridiam
             // Scan Axis Increment
             // Part Length
             // Part Diameter
+            // Scan start position
+            // scan end position
         }
     }
 
-    // Other
-        // Limit status
-        // Current Position
-        // Scan start position
-        // Scan end position
+    internal class ScanData
+    {
+        private StreamWriter FileWriter = null;
+        public ScanData(int numberOfDataPoints)
+        {
+            // write it all to a data file, only header is the number of dataPoints
+            FileStream fileStream = new FileStream("data.frm", FileMode.Create);
+            FileWriter = new StreamWriter(fileStream);
+            FileWriter.Write(numberOfDataPoints);
+        }
+
+        public void WriteData(ushort[] frame)
+        {
+            FileWriter.Write(frame.Length);
+            foreach (ushort i in frame) { FileWriter.Write(i); }
+        }
+
+        public void ScanComplete()
+        {
+            FileWriter.Flush();
+            FileWriter.Close();
+        }
+    }
+
 }

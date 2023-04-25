@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\obj\Debug\
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\Veridiam\obj\Debug\
 Veridiam
 none
 false
 DEBUG;TRACE
-C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\App.xaml
+C:\Users\scott\OneDrive\Documents\GitHub\Winscan3\VeridiamWPF\Veridiam\App.xaml
 41069165927
 
 16-1672338675
-14898112664
+14-1714036900
 JogControl.xaml;MainWindow.xaml;ServoControl.xaml;ConnectControl.xaml;
 
-False
+True
 
