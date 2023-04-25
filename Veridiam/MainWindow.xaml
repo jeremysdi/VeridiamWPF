@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <local:UserControl1 HorizontalAlignment="Left" Margin="-324,-146,0,0" VerticalAlignment="Top" Height="446" Width="847"/>
+        <local:UserControl1 HorizontalAlignment="Left" Margin="-300,-146,0,0" VerticalAlignment="Top" Height="446" Width="847"/>
         <local:ServoControl HorizontalAlignment="Left" Margin="1,149,0,0" VerticalAlignment="Top" Height="193" Width="197"/>
 
     </Grid>

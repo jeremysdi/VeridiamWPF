@@ -9,6 +9,8 @@ namespace Veridiam
     internal class ScanSystem
     {
         GalilHandler gal = new GalilHandler();
+        
+        #region Galil Specific
         public static int Connect()
         {
             return GalilHandler.Connect();
@@ -17,5 +19,18 @@ namespace Veridiam
         {
             return GalilHandler.Disconnect();
         }
+        internal static int ServoOn()
+        {
+            return GalilHandler.ServoOn();
+        }
+        internal static int ServoOff()
+        {
+            return GalilHandler.ServoOff();
+        }
+        internal static int Reset()
+        {
+            return GalilHandler.Reset();
+        }
+        #endregion
     }
 }

@@ -84,3 +84,5 @@ C:\Users\Ashley\Documents\GitHub\VeridiamWPF\Veridiam\obj\Debug\ServoControl.g.c
 C:\Users\Ashley\Documents\GitHub\VeridiamWPF\Veridiam\obj\Debug\ServoControl.baml
 C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\obj\Debug\ServoControl.g.cs
 C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\obj\Debug\ServoControl.baml
+C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\obj\Debug\UserControl2.g.cs
+C:\Users\jerem\AppData\Local\GitHubDesktop\app-3.2.1\VeridiamWPF\Veridiam\obj\Debug\UserControl2.baml

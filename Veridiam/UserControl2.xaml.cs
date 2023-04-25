@@ -16,28 +16,18 @@ using System.Windows.Shapes;
 namespace Veridiam
 {
     /// <summary>
-    /// Interaction logic for ServoControl.xaml
+    /// Interaction logic for UserControl2.xaml
     /// </summary>
-    public partial class ServoControl : UserControl
+    public partial class UserControl2 : UserControl
     {
-        public ServoControl()
+        public UserControl2()
         {
             InitializeComponent();
         }
 
-        private void BtnServoOn_Click(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            ScanSystem.ServoOn();
-        }
 
-        private void BtnServoOff_Click(object sender, RoutedEventArgs e)
-        {
-            ScanSystem.ServoOff();
-        }
-
-        private void BtnReset_Click(object sender, RoutedEventArgs e)
-        {
-            ScanSystem.Reset();
         }
     }
 }

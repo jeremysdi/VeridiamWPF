@@ -29,5 +29,10 @@ namespace Veridiam
         {
             ScanSystem.Disconnect();
         }
+
+        private void BtnConnect_Click(object sender, RoutedEventArgs e)
+        {
+            ScanSystem.Connect();
+        }
     }
 }

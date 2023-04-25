@@ -8,9 +8,9 @@
              d:DesignHeight="450" Width="514">
     <Grid Width="200" Height="199" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Rectangle HorizontalAlignment="Center" Height="200" Stroke="Black" VerticalAlignment="Center" Width="200" Fill="#FFA7A4A4"/>
-        <Button x:Name="BtnServoOn" Content="Servo On" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="BtnServoOff" Content="Servo Off" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="BtnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="BtnServoOn" Content="Servo On" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold" Click="BtnServoOn_Click"/>
+        <Button x:Name="BtnServoOff" Content="Servo Off" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="100" FontSize="16" FontWeight="Bold" Click="BtnServoOff_Click"/>
+        <Button x:Name="BtnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold" Click="BtnReset_Click"/>
 
     </Grid>
 </UserControl>
