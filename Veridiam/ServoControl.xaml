@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Veridiam"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Width="200" Height="250">
-        <Rectangle HorizontalAlignment="Center" Height="250" Stroke="Black" VerticalAlignment="Center" Width="200" Fill="#FFA7A4A4"/>
-        <Button x:Name="BtnServoOn" Content="Servo On" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="BtnServoOff" Content="Servo Off" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="BtnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
+             d:DesignHeight="450" Width="514">
+    <Grid Width="200" Height="253" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Rectangle HorizontalAlignment="Center" Height="200" Stroke="Black" VerticalAlignment="Center" Width="200" Fill="#FFA7A4A4"/>
+        <Button x:Name="BtnServoOn" Content="Servo On" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="BtnServoOff" Content="Servo Off" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="BtnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="50" Width="100" FontSize="16" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>
