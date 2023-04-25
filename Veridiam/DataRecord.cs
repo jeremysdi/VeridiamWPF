@@ -11,8 +11,10 @@ namespace Veridiam
     {
         public DataRecord() 
         {
-           
             
+            // Limit status
+            // Current Position
+
         }
     }
 
@@ -68,12 +70,18 @@ namespace Veridiam
             // Scan Axis Increment
             // Part Length
             // Part Diameter
+            // Scan start position
+            // scan end position
         }
     }
 
-    // Other
-        // Limit status
-        // Current Position
-        // Scan start position
-        // Scan end position
+    internal class ScanData
+    {
+        
+        public ScanData(int numberOfDataPoints)
+        {
+
+        }
+    }
+
 }
