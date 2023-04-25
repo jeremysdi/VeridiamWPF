@@ -11,7 +11,7 @@ namespace Veridiam
     internal class DataRecord
     {
         MechConfig MechConfig { get; }
-        public DataRecord(int numberOfAxis, int numberOfTransducers) 
+        public DataRecord(int numberOfAxis, int numberOfTransducers)
         {
             MechConfig = new MechConfig(numberOfAxis);
             // Limit status
@@ -32,7 +32,7 @@ namespace Veridiam
         public int[] D { get; set; }
         public bool[] AxisUseLimits { get; set; }
 
-        public MechConfig(int numberOfAxis) 
+        public MechConfig(int numberOfAxis)
         {
             this.NumberOfAxis = numberOfAxis;
             AxisDesignation = new string[numberOfAxis];
@@ -104,7 +104,7 @@ namespace Veridiam
                     D[i] = int.Parse(line[i]);
                 }
             }
-            catch (FileNotFoundException) 
+            catch (FileNotFoundException)
             {
                 // default file not found, load hard-coded defaults
                 MessageBox.Show("Could not find default.cfg file");
